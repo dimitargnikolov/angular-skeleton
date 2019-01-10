@@ -1,0 +1,13 @@
+<div class="btn-group">
+  <button type="button" class="btn btn-primary" ng-click="$ctrl.probeGET()">GET Probe</button>
+  <button type="button" class="btn btn-primary" ng-click="$ctrl.probePOST()">POST Probe</button>
+</div>
+
+<h1>Method</h1>
+<span>{{$ctrl.result.method}}</span>
+
+<h1>Response</h1>
+<pre ng-show="$ctrl.result && $ctrl.result.response">{{$ctrl.result.response}}</pre>
+
+<h1>Error</h1>
+<pre ng-show="$ctrl.result && $ctrl.result.error">{{$ctrl.result.error}}</pre>

@@ -1,21 +1,30 @@
 <!doctype html>
-<html lang="en" ng-app="clientSkeleton">
+<html lang="en" ng-app="skeleton">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Skeleton AngularJS App</title>
-    
+
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="app.css">
 
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
 
     <script src="app.js"></script>
     <script src="components/main/main.component.js"></script>
+    <script src="components/probe/probe.component.js"></script>
+    <script src="components/navbar/navbar.component.js"></script>
+    <script src="core/name.service.js"></script>
+    <script src="core/probe.service.js"></script>
   </head>
   <body>
-    This is the app:<br />
-    <div ng-view></div>
+    <div class="container-fluid">
+      <navbar></navbar>
+      <div ng-view></div>
+    </div>
   </body>
 </html>

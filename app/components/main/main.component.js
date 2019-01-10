@@ -1,8 +1,12 @@
 'use strict';
 
-angular.module('clientSkeleton').component('main', {
+angular.module('skeleton').component('main', {
     templateUrl: 'components/main/main.template.html',
-    controller: [function MainController() {
-	this.name = 'Abe';
+    controller: ['Name', function MainController(Name) {
+	this.name = Name.currentName;
+
+	this.changeName = function(name) {
+	    Name.currentName = name;
+	};
     }]
 });

@@ -2,7 +2,7 @@
 
 describe('main', function() {
 
-    beforeEach(module('clientSkeleton'));
+    beforeEach(module('skeleton'));
 
     describe('MainController', function() {
 	var ctrl;
